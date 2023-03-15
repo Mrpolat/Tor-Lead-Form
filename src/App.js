@@ -1,11 +1,12 @@
-import logo from './logo.svg';
+
 import './App.css';
-import LeadForm from './components/LeadForm';
+import './style/leadform.scss'
+import Index from './pages';
 
 function App() {
   return (
     <div className="App">
-      <LeadForm/>
+        <Index/>
     </div>
   );
 }
