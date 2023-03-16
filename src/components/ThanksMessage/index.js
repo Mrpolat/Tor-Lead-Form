@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-
+import { AiOutlineCheckCircle } from 'react-icons/ai'
 const ThanksMessage = () => {
 
   //let [searchParams, setSearchParams] = useSearchParams();
@@ -15,8 +15,9 @@ const ThanksMessage = () => {
     };
 
   return (
-    <div>
-      <h1>ThanksMessage</h1>
+    <div className='contentThanks'>
+      <h1 className='contentThanks-message'>Thanks For Your Submission</h1>
+      <AiOutlineCheckCircle className='OutlineCheck' />
       </div>
   )
 }

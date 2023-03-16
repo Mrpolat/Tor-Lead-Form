@@ -8,7 +8,7 @@ import { Form, redirect } from "react-router-dom";
 
 const LeadForm = () => {
   
-  const [phoneNumber, setPhoneNumber] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState(""); //inputtan gelen telefon numarası
 
   return (
     <div className="lead-form">
@@ -40,10 +40,13 @@ const LeadForm = () => {
           required
         />
         <br />
-       
-        <input type="text" name="phone" hidden value={phoneNumber} readOnly />
+
+        {/* PhoneInput componentinden formData'ya gelen değer içerisinde ülke alanları dahil edilmediği için gizli bir inputta bu değeri saklayıp kullanıyorum. */}
+        {/* Farkı anlamak için 67. satırda ki data yı console'a yazdırıp input daki name property'i PhoneInput componentte ekleyin. */}
+
+        <input type="text" name="phone" hidden value={phoneNumber} readOnly /> 
         <PhoneInput
-          className="lead-form-item lead-form-input left"
+          className="lead-form-item lead-form-phoneInput left"
           placeholder="Enter phone number"
           value={phoneNumber}
           onChange={(e)=>setPhoneNumber(e)}

@@ -7,6 +7,9 @@ import {
 import ThanksMessage from '../components/ThanksMessage';
 
 const Index = () => {
+  //react-router-dom kütüphanesi çok fazla version alan bir kütüphane ve kullanımı çok sık değişebiliyor.
+  //bu projede çok fazla sayfa bulunmadığı için şuan sadece componentlerim ile çalışıyorum.
+  //router işlemlerini index(main) sayfasında yapıyoruz.
   const router = createBrowserRouter([
     {
       path: "/",

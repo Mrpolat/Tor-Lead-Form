@@ -1,9 +1,18 @@
 .lead-form {
-  background-color: #EBEBEB;
   width: 300px;
   height: 300px;
-  margin-left: auto;
-  margin-right: auto;
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+  background-color: #EBEBEB;  
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  &:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+}     
   &-item {
     margin-top: auto;    
     margin-bottom: 15px;
@@ -30,11 +39,25 @@
     box-sizing: border-box;
     outline: none;
   }
+  &-phoneInput{    
+    position: relative;
+    left: 15px;
+    width: 79%;
+    margin-bottom: -5px !important;
+  }
   &-button{
     background-color: #1c87c9;
-    border:1px solid #1c87c9;
+    color: white;    
     padding: 5px 10px;
-    color: white;
+    border:1px solid #1c87c9;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.4s;
+    &:hover{
+      box-shadow: 0 7px 10px 0 rgba(0,0,0,0.2);
+      background-color: #10ba3b;
+    }       
+    
   }
 }
 .title{
@@ -46,3 +69,6 @@
 .left{
   margin-left: 16px;
 }
+
+
+
