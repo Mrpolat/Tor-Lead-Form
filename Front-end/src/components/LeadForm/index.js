@@ -5,6 +5,7 @@ import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 import { isValidPhoneNumber } from "react-phone-number-input";
 import { Form, redirect } from "react-router-dom";
+import { phoneNumberCheck } from "../../api/api";
 
 const LeadForm = () => {
   
@@ -87,6 +88,7 @@ export const leadFormAction= async({request})=>{
         return letters[letter];
       });
       return string.toLowerCase();}
+      phoneNumberCheck(submission.phone);//Consoleda api den gelen isteğin çalıştığını göstermek için sonuç basar
     return redirect(`/thanks?utm_source=${submission.name.turkishToLower()}&utm_medium=${submission.email}&utm_term=${submission.phone}`)
   }
 }
