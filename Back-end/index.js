@@ -1,8 +1,8 @@
 // Download the helper library from https://www.twilio.com/docs/node/install
 // Find your Account SID and Auth Token at twilio.com/console
 // and set the environment variables. See http://twil.io/secure
-const accountSid = "AC17473de555d25364f6450a0b20c72fa2";
-const authToken = "45bb5413bc5f97173708fb00965091b7";
+const accountSid = "DELETED_BEFORE_GİTHUB_PUSH";
+const authToken = "DELETED_BEFORE_GİTHUB_PUSH";
 const client = require("twilio")(accountSid, authToken);
 const cors = require("cors")
 
